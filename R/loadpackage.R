@@ -4,8 +4,7 @@
 #' CRAN (if needed) and instantiated into memory. You will know this is successful
 #' if the return value is TRUE.  FALSE indicates failure.
 #' @param pname Name of the desired package. No default.
-#' @param quiet if TRUE suppresses output from this function. Defaults to FALSE.
-
+#' @param quiet If TRUE suppresses output from this function. Defaults to FALSE.
 #' @keywords loadpackage
 #' @export
 #' @examples
@@ -25,7 +24,7 @@ loadpackage <- function(pname, quiet=FALSE)
     loaded <- require(pname,character.only = TRUE,quietly = TRUE,warn.conflicts = FALSE)
     if (!loaded)
     {
-      if(quiet) {cat("\nCan't load package ",pname,".\n",sep = "")}
+      if(!quiet) {cat("\nCan't load package ",pname,".\n",sep = "")}
     }
   } else
   {

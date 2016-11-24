@@ -9,7 +9,7 @@ loadpackage(pname, quiet = FALSE)
 \arguments{
 \item{pname}{Name of the desired package. No default.}
 
-\item{quiet}{if TRUE suppresses output from this function. Defaults to FALSE.}
+\item{quiet}{If TRUE suppresses output from this function. Defaults to FALSE.}
 }
 \description{
 This function allows you to load packages cleanly.  They will be downloaded from 
