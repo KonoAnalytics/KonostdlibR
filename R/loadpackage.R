@@ -12,7 +12,7 @@
 loadpackage <- function(pname, quiet=FALSE)
 {   #installs and loads package, only if necessary
   installedpackages_m <- utils::installed.packages() #matrix of installed libraries
-  installed <- (pname %in% installedpackagess_m[,1])
+  installed <- (pname %in% installedpackages_m[,1])
   if (!installed) # then install library
   {
     install.packages(pname,repos = 'http://cran.us.r-project.org')

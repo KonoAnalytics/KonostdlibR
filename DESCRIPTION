@@ -1,6 +1,6 @@
 Package: KonostdlibR
 Title: What the Package Does (one line, title case)
-Version: 0.0.1.0000
+Version: 0.0.2.0000
 Authors@R: person("Jonathan", "Bennett", email = "R@konoanalytics.com", role = c("aut", "cre"))
 Description: Kono Analytics standard R library of convenience functions.
 Depends:
