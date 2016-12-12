@@ -3,17 +3,17 @@
 #' This function allows you to execute a mysql statement against a mysql database. The only required parameter is
 #' the mysql statement.  All others may be NULL.
 #' The function returns a dataframe.
+#' @param statement The MYSQL statement you would like to execute.
 #' @param con A connection of type MySQLConnection as described in theRMySQL package. If NULL, one will be created.
 #' @param user The user id of the database.
 #' @param password The password of the dataase.
 #' @param host Where the database resides.
 #' @param dbname The name of the database.
-#' @param statement The MYSQL statement you would like to execute.
 #' @keywords runmysql
 #' @export
 #' @examples
 #' runmysql(statement = "select * from tbl_main")
-runmysql <- function(con=NULL, user=NULL, password=NULL, host=NULL, dbname=NULL, statement)
+runmysql <- function(statement,con=NULL, user=NULL, password=NULL, host=NULL, dbname=NULL)
 {
     library('RMySQL')
     library('KonostdlibR')
