@@ -4,10 +4,12 @@
 \alias{runmysql}
 \title{runmysql Function}
 \usage{
-runmysql(con = NULL, user = NULL, password = NULL, host = NULL,
-  dbname = NULL, statement)
+runmysql(statement, con = NULL, user = NULL, password = NULL,
+  host = NULL, dbname = NULL)
 }
 \arguments{
+\item{statement}{The MYSQL statement you would like to execute.}
+
 \item{con}{A connection of type MySQLConnection as described in theRMySQL package. If NULL, one will be created.}
 
 \item{user}{The user id of the database.}
@@ -17,8 +19,6 @@ runmysql(con = NULL, user = NULL, password = NULL, host = NULL,
 \item{host}{Where the database resides.}
 
 \item{dbname}{The name of the database.}
-
-\item{statement}{The MYSQL statement you would like to execute.}
 }
 \description{
 This function allows you to execute a mysql statement against a mysql database. The only required parameter is
