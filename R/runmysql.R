@@ -15,8 +15,7 @@
 #' runmysql(statement = "select * from tbl_main")
 runmysql <- function(statement,con=NULL, user=NULL, password=NULL, host=NULL, dbname=NULL)
 {
-    library('RMySQL')
-    library('KonostdlibR')
+    KonostdlibR::loadpackage('RMySQL')
     if (is.null(con))
     {
         if (is.null(user)) {user <- as.character(KonostdlibR::getcredentials("AWSMySQLSandbox")$userid)}
