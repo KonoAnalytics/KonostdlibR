@@ -3,4 +3,5 @@
 export(changedfnames)
 export(getcredentials)
 export(loadpackage)
+export(pushtodomo)
 export(runmysql)
